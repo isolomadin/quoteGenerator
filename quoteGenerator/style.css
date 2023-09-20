@@ -1,0 +1,131 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: rgb(71, 129, 71);
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 30rem;
+    padding: 25px 25px 20px;;
+    background-color: aliceblue;
+    border-radius: 1rem;
+}
+
+header {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.content {
+    margin: 30px 0;
+}
+
+.content__quote {
+    display: flex;
+    justify-content: center;
+}
+
+.content__quote i {
+    font-size: 0.7rem;
+}
+
+.content__quote i:first-child {
+    margin: 3px 10px 0 0;
+}
+
+.quote {
+    font-size: 1.5rem;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.content__quote i:last-child {
+    display: flex;
+    align-items: flex-end;
+    margin: 0 0 3px 10px;
+}
+
+.content__author {
+    display: flex;
+    margin-top: 5px;
+    justify-content: flex-end;
+}
+
+.name {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.buttons {
+    border-top: 1px solid #000;
+}
+
+.features {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.features ul li {
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    list-style: none;
+    margin: 0 5px;
+    border: 2px solid rgb(71, 129, 71);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    color: rgb(71, 129, 71);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.features ul li:first-child {
+    margin: 0 5px 0 0;
+}
+
+.features ul li:hover {
+    color: aliceblue;
+    background-color: rgb(71, 129, 71);
+}
+
+.features button {
+    border: none;
+    outline: none;
+    background-color: rgb(71, 129, 71);
+    border-radius: 1.5rem;
+    padding: 15px 20px;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: all 0.5s ease;
+}
+
+.features button:hover {
+    color: rgb(71, 129, 71);
+    background-color: aliceblue;
+    border: 2px solid rgb(71, 129, 71);
+}
+
+.features button.active {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.features button.active:hover {
+    background-color: rgb(71, 129, 71);
+    color: aliceblue;
+    border: 0px solid rgb(71, 129, 71);
+}
